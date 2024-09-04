@@ -1,3 +1,4 @@
+#include<iostream>
 #include <algorithm>
 using namespace std;
 
@@ -20,8 +21,10 @@ using namespace std;
          int arr[4]={3,4,6,5};
         int n = sizeof(arr) / sizeof(arr[0]);
        
-     which_is_greater( arr, n);
+ cout<<  which_is_greater( arr, n);
     
     }
+    
+    
     
     

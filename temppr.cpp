@@ -2,15 +2,15 @@
 using namespace std;
 
 int main() {
-    int n; // Size of the vector
-    cin >> n;
-    vector<int> v;
-    for (int i = 0; i < n; ++i) {
-        int a;
-        cin >> a;
-        v.push_back(a);
+    int x; // Size of the vector
+    cin >> x;
+    vector<int> b;
+    for (int i = 0; i < x; ++i) {
+        int v;
+        cin >> v;
+        b.push_back(v);
     }
-    for (const auto &p : v) {
+    for (const auto &p : b) {
         cout << p << " ";
     }
     cout << endl;
