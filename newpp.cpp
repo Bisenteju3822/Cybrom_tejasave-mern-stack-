@@ -12,3 +12,4 @@ int main(){
 	string name;
 	second("Alice",first);
 	return 0;
+}
