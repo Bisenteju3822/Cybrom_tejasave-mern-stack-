@@ -1,6 +1,12 @@
-let name ="Tejasave"
-let sername="Bisen"
-let age=22
-let color='white'
-var data ={myname:"Tejasave",mysername:"Bisen",myage:22,mycolor:'white'}
-console.log(data)
+const modifier=function(bass){
+    return bass*1.5;
+}
+const regulation=function(shrill){
+    return shrill+10;
+}
+  const soundClarity=function(shrill ,bass){
+    const modifiedShrill=regulation(shrill);
+    const modifiedBass=modifier(bass) ;
+    return{shrill:modifiedShrill,bass:modifiedBass};
+  }
+  console.log(soundClarity(79,105));
