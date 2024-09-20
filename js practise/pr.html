@@ -5,7 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .button{
+        transition: background-color 0.5s linear ;
+    }
+    .button:hover{
+        background-color: blanchedalmond;
+    }
+
+    .box{
+        background-color: blueviolet;
+        width: 300px;
+        height: 200px;
+        transition-timing-function: ease-in;
+        animation: moveLefttoRight 10s infinite;
+    }
+    .box:hover{
+        background-color: blue;
+    }
+    @keyframes moveLefttoRight {
+
+    0%{
+        animation-direction:normal;
+        transform: translateX(0);
+        background-color: brown;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+    }
+    20%{
+        animation-direction: normal;
+        transform: translatex(330px);
+        background-color: chartreuse;
+        transition-timing-function: ease-in;
+        transition-delay: 4s;
+        border-radius: 40%;
+    }
+    50%{transform:translateY(400px) ;
+        animation-direction: normal;
+        background-color: bisque;
+        transition-timing-function: ease-in-out;
+        transition-delay: 3s;
+        border-radius: 60%;
+    }
+    80%{
+        transform: translateX(400px);
+        animation-direction: alternate;
+        transition-property: background-color 0.5s linear;
+        border-radius: 80%;
+    }
+
+
+    }
+</style>
 <body>
-    <script src="4.js"></script>
+    <div class="box">
+        1
+
+    </div>
+    <button class="button">button</button>
+  <!----  <script src="4.js"></script>-->
 </body>
+
 </html>

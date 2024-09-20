@@ -130,13 +130,35 @@ let b=parseFloat(window.prompt("Enter your number"))
  else{
   alert('even number')
  }*/
- const a=confirm("you are loggging or not")
+ /*const a=confirm("you are loggging or not")
  if(a){
   window.open("login.html")
  }
  else{
   alert('not login')
- }
+ } */
+/*function salary(){
+let a=parseFloat(prompt("Enter your salary"))
+let=n1
+if(a<=350000){
+  alert("less than 5 lakh")
+}
+else if (a>=500000){
+ n1 =a*0.1
+  alert(n1)
+ // console.log(a)
+}
+else if (a<=800000){
+ n1=a*0.17
+// console.log(a)
+ alert(n1)
+}
+}
+salary() */
+
+
+
+
 
 
 
