@@ -156,6 +156,54 @@ else if (a<=800000){
 }
 salary() */
 
+/*function n2(){
+  const a=document.querySelector('#n1')
+  a.style.color ="blue"
+  a.style.fontSize ="90px"
+  a.style.fontStyle= 
+  
+
+}*/
+//let b=document.querySelector('#n1').textContent="we have derive this"
+/*function n2(){
+  let a=document.querySelector('.img')
+ // a.style
+  a.style.transform="scale(1.50)"
+ console.log(a)
+}*/
+/*const n1={
+  year:2002,
+  calcfunc:function(){
+    return 2021-this.year
+  }
+
+}
+console.log(n1.calcfunc())*/
+/*(function(){
+  console.log("hello")
+})()*/
+/*const newd={
+  firstname:"tejasave",
+  age:22,
+  surname:"Bisen",
+   calcage(){
+      return  2021-this.year 
+   }
+   
+
+
+}*/
+
+   function n1(){
+    let a=document.querySelector('#ne').textContent="the bmx are very good"
+    a.style.backgroundImage="url('https://images.hellomagazine.com/imagenes/news/20230101160137/best-new-cars-2023/0-778-296/best-new-cars-2023-hero-t.jpg')"
+    a.style.width="1000px"
+    a.style.height="800px"
+}
+
+
+
+
 
 
 
