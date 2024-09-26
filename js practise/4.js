@@ -194,12 +194,16 @@ console.log(n1.calcfunc())*/
 
 }*/
 
-   function n1(){
+/*   function n1(){
     let a=document.querySelector('#ne').textContent="the bmx are very good"
     a.style.backgroundImage="url('https://images.hellomagazine.com/imagenes/news/20230101160137/best-new-cars-2023/0-778-296/best-new-cars-2023-hero-t.jpg')"
     a.style.width="1000px"
     a.style.height="800px"
-}
+}*/
+const transition=['-100','+100','+300','+900']
+const sum=0
+ 
+
 
 
 

@@ -1,0 +1,19 @@
+#reg{
+    display: flex;
+  width: 600px;
+  height:500px;
+  background-color: rgb(165, 42, 118);
+  border: 10px solid black;
+  display: block;
+  margin: 0 auto; 
+  
+}
+.font{
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+}
+#input{
+    font-size: 70px;
+}
