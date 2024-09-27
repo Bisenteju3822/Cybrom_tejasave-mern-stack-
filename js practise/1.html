@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+    }
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+    .long-box {
+      width: 200px;
+      height: 900px;
+      background-color: gray;
+      margin-left: 10px; /* Space between the columns */
+    }
+  </style>
 </head>
 <body>
-  <!----  <h1 id="time">
-      
-    </h1>-->
-
-
+  <div class="container">
+    <div class="left-column">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="long-box">
+  </div>
 </body>
-<script src="4.js"></script>
 </html>
