@@ -11,9 +11,19 @@
 .font{
   font-style: italic;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 5px;
   text-align: center;
 }
 #input{
     font-size: 70px;
+}
+#error{
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 40px;
+}
+#erroremail{
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 40px;
 }
