@@ -6,24 +6,35 @@ function fun(){
     const f=document.querySelector("#t5").value
     console.log(b,c,d,e,f)
    
-  if(b ===""){
-    document.querySelector("#error").innerHTML="Enter your name"
+  if(b===""){
+      document.querySelector("#error").innerHTML="Enter your name"
      let selname=document.querySelector("#t1")
      selname.style.borderColor="red"
      selname.style.outlineColor="red"
     
      
-
+  return false
   }
-   if(c===""){
-    document.querySelector("#error").innerHTML="Enter your name"
+ 
+
+   else if(c===""){
+    document.querySelector("#erroremail").innerHTML="Enter your email"
      let name1=document.querySelector("#t2")
      name1.style.borderColor="red"
      name1.style.outlineColor="red"
-     
-     
+     return false
+   } 
   }
-  if(d===""){
+  function bond(){
+    let  selectinput=document.querySelector('#t1')
+    const selecterrorinput=document.querySelector('#error')
+    selectinput.style.borderColor="black"
+    selecterrorinput.style.outlineColor="black"
+    return false
+  }
+
+  /*
+   else if(d===""){
     document.querySelector("#error").innerHTML="Enter your name"
     let name2=document.querySelector("#t3")
     name2.style.borderColor="red"
@@ -31,7 +42,7 @@ function fun(){
     
     
   }
-  if(e===""){
+   else if(e===""){
     document.querySelector("#error").innerHTML="Enter your name"
      let name3=document.querySelector("#t4")
      name3.style.borderColor="red"
@@ -39,14 +50,21 @@ function fun(){
      
      
   }
-  if(f===""){
+   else if(f===""){
     document.querySelector("#error").innerHTML="Enter your n"
      let name4=document.querySelector("#t5")
      name4.style.borderColor="red"
      name4.style.outlineColor="red"
      
+
+     
      
   }
+   function bond(){
+    const selectinput=document.querySelector('#t1')
+    const selecterrorinput=document.querySelector('#error')
+    selectinput.style.borderColor="black"
+    selecterrorinput.style.outlineColor="black"
+  }*/
 
 
-}
