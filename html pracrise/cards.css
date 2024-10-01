@@ -1,0 +1,32 @@
+#cards div{
+        width: 300px;
+        height: 400px;
+        background-color:aqua ;
+        margin: 20px;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    
+}
+
+@media(max-width:1025px){
+    #cards{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media(max-width:769px){
+    #cards{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:431px){
+    #cards div{
+        width: 150px;
+        height: 300px;
+        margin: 10px;
+}
+}
