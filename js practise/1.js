@@ -1,2 +1,4 @@
-setTimeout(()=>{document.write("Hello OOO")},3000)
-setInterval()
+let b=22
+function n1(){
+    let b=22;
+}
