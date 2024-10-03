@@ -32,6 +32,36 @@ function fun() {
 
 
   }
+ else if(!(
+  password.match(/[123456789]/)
+  &&password.match(/[!@$%^&*]/)
+  &&password.match(/[ABCDEF]/)
+  &&password.match(/[fdbdbjdbr9r]/)
+  &&password.length<=8
+ )){
+  document.querySelector("#errorpassword").innerHTML="Enter strong password upper,lower,number,special character"
+
+  let selectname=document.querySelector("#t3");
+  selectname.style.borderColor="10px solid red"
+  selectname.style.outlineColor="red"
+ }
+ elseif(cpassword!== cpassword){
+  Document.querySelector("#errorcpassword").innerHTML="Password is not same"
+  let selectname=document.querySelector("#t3");
+  selectname.style.borderColor="10px solid red"
+  selectname.style.outlineColor="red" 
+  return false;
+ }
+
+ 
+  
+ 
+
+
+
+
+
+
 }
 /*
 else if(!(email.includes("@")&&email.include("gmail"))){
