@@ -20,7 +20,7 @@ const ondone=function(){
 }
 ondone()
 function source(){
-    console.log("new boy")
+    console.log("new boy")-
 }
 setTimeout(source 
 ,7000)
