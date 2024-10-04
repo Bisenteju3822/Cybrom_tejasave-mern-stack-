@@ -1,12 +1,12 @@
-/*setTimeout(() => {
+setTimeout(() => {
     console.log("hello")
     
-}, 2000)*/
-/*setTimeout(function() {
+}, 2000)
+setTimeout(function() {
      console.log("new")
-}, 4000);*/
+}, 4000)
 
-/*const shw=function(){
+const shw=function(){
     let a=document.querySelector("#website")
      let b=document.querySelector("#img")
      a.style.display="block"
@@ -18,7 +18,7 @@ const ondone=function(){
         shw();console.log("switch content")
    }, 2000)
 }
-ondone()*/
+ondone()
 function source(){
     console.log("new boy")
 }

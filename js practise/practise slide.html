@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        .slider {
+            position: relative;
+            
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+        
+            animation: slide 4s infinite;
+        }
+        .slides img {
+        width: 400%;
+        
+        }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="Screenshot 2024-06-15 125038.png"  alt="Image 1">
+            <img src="Screenshot 2024-06-15 125038.png"  alt="Image 2">
+            <img src="Screenshot 2024-06-15 125038.png"  alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
