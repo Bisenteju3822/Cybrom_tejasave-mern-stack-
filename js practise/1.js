@@ -6,15 +6,24 @@
      console.log("new")
 }, 4000);*/
 
-const shw=function(){
+/*const shw=function(){
     let a=document.querySelector("#website")
      let b=document.querySelector("#img")
      a.style.display="block"
      b.style.display="none"
 }
+
 const ondone=function(){
     setTimeout(function() {
-        
-   }, 4000)
+        shw();console.log("switch content")
+   }, 2000)
 }
+ondone()*/
+function source(){
+    console.log("new boy")
+}
+setTimeout(source 
+,7000)
+
+
 
