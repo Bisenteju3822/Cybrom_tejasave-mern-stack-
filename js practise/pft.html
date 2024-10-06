@@ -6,12 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div >
-        <img  id="change" src="Screenshot 2024-06-15 125038.png">
-        
-    </div>
-    
-     <button onclick="change();">Click</button>
+    <form>
+        <div id="errorname"></div>
+        <input type="text" placeholder="Enter your name" id="name"><br>
+        <div id="errornumber"></div>
+        <input type="number" placeholder="Enter your number"id="number"><br>
+        <div id="erroremail"></div>
+        <input type="text" placeholder="Enter your email" id="email"><br>
+        <div id="errorage"></div>
+        <input type="text" placeholder="Enter your age" id="age">
+      
+    </form>
+    <button onclick=" return valid();">CLICK</button>
     <script src="pft.js"></script>
 </body>
 </html>
