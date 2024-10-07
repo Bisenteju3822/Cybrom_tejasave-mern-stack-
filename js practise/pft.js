@@ -47,4 +47,15 @@ const correct=()=>{
     const onblur=document.querySelector("#name").style.borderColor="black"
     alert("done")
 }*/
+function practise(){
+    let cout = 0;  // Use 'let' since 'cout' will be incremented
+    const run = function(){
+        console.log("hello");
+        document.querySelector("#n1").innerText = "Count: " + cout;
+        cout++;
+    }
+    setInterval(run, 2000);  // Runs 'run' every 2 seconds
+    run();  // Initial call to run()
+}
+
 
