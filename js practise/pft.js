@@ -14,7 +14,7 @@ const change=function(){
     b.style.width="500px"
 }*/
   
-function valid() {
+/*function valid() {
     let jsname = document.querySelector("#name").value;
     let jsnumber = document.querySelector("#number").value;
     let jsemail = document.querySelector("#email").value;
@@ -46,4 +46,5 @@ function valid() {
 const correct=()=>{
     const onblur=document.querySelector("#name").style.borderColor="black"
     alert("done")
-}
+}*/
+
