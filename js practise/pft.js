@@ -31,6 +31,19 @@ function valid() {
     }
 
     // Add additional validation checks for jsnumber, jsemail, jsage as needed
-
+   if(jsnumber!==123456789){
+      document.querySelector("#errornumber").innerHTML="Enter number between 1 to 9"
+      document.querySelector("#number").style.borderColor="red"
+      alert("conform")
+   }
+   if(jsemail.match!=='@gmail#$'){
+    document.querySelector("#erroremail").innerHTML="Enter special character@,gmail,#,$"
+     document.querySelector("#gmail").style.borderColor="red"
+     alert("d")
+   }
    
+}
+const correct=()=>{
+    const onblur=document.querySelector("#name").style.borderColor="black"
+    alert("done")
 }
