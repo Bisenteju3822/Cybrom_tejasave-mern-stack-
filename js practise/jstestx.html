@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div id="errorpassword"></div>
+        <input id="password" type="text" placeholder="Enter your password"><br>
+    </form>
+    <button type="button" onclick="valid();">CLICK</button>
+    <script src="jstest1.js"></script>
+
+    <script>
+        function valid() {
+            let jspassword = document.querySelector("#password").value;
+
+            console.log(jspassword);
+            alert("yes");
+
+            const hasUpperCase = /[A-Z]/.test(jspassword);
+            const hasLowerCase = /[a-z]/.test(jspassword);
+            const hasSpecialChar = /[@,#,%,$]/.test(jspassword);
+            const isCorrectLength = jspassword.length >= 8;
+
+            if (!hasUpperCase || !hasLowerCase || !hasSpecialChar || !isCorrectLength) {
+                document.querySelector("#errorpassword").innerHTML = "Password must contain upper case, lower case, special characters, and be at least 8 characters long.";
+                document.querySelector("#password").style.border = "2px solid red";
+                alert("Incorrect password format.");
+            } else {
+                document.querySelector("#errorpassword").innerHTML = "Valid password.";
+                document.querySelector("#password").style.border = "2px solid black";
+                alert("Password is valid.");
+            }
+        }
+    </script>
+</body>
+</html>

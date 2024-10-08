@@ -1,0 +1,77 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div id="errorname"></div>
+        <input type="text" placeholder="Enter your name" onblur="correct()" id="name"><br>
+        <div id="errornumber"></div>
+        <input type="text" placeholder="Enter your number"id="number"><br>
+        <div id="erroremail"></div>
+        <input type="text" placeholder="Enter your email" id="email"><br>
+        <div id="errorage"></div>
+        <input type="text" placeholder="Enter your age" id="age">
+      
+    </form>
+    <button onclick=" return valid();">CLICK</button>
+    <script src="pft.js"></script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Card Generator</title>
+   
+</head>
+<body>
+    <div>
+        <h2>Enter Details</h2>
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field">
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation">
+        </div>
+        <div class="field">
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact">
+        </div>
+        <div class="field">
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+        </div>
+        <button class="btn" onclick="generateCard()">Generate Card</button>
+    </div>
+
+    <div class="card" id="visitingCard" style="display: none;">
+        <h3 id="cardName"></h3>
+        <p id="cardDesignation"></p>
+        <p id="cardContact"></p>
+        <p id="cardEmail"></p>
+    </div>
+
+    <script>
+        function generateCard() {
+            let name = document.querySelector("#name").value;
+            let designation = document.querySelector("#designation").value;
+            let contact = document.querySelector("#contact").value;
+            let email = document.querySelector("#email").value;
+
+            document.querySelector("#cardName").innerText = name;
+            document.querySelector("#cardDesignation").innerText = designation;
+            document.querySelector("#cardContact").innerText = contact;
+            document.querySelector("#cardEmail").innerText = email;
+
+            document.querySelector("#visitingCard").style.display = "block";
+        }
+    </script>
+</body>
+</html>
