@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        img {
-            display: none;
-        }
-    </style>
+   <style>
+    img{
+        display: none;
+    }
+   </style>
 </head>
 <body>
-   <div id="none">
-       <img id="back" src="Screenshot 2024-06-15 125038.png" onclick="change()" width="500px">
-   </div> 
-   <button onclick="back()">Click</button>
-   <script>
-     function back() {
-         document.getElementById("back").src = "dataScience.36dd03b9.jpg";
-         document.getElementById("back").style.display = "block";
-         alert("correct");
-     }
-     
-     function change() {
-         document.getElementById("back").src = "Screenshot 2024-06-15 125038.png";
-         document.getElementById("back").style.zIndex = "-1";
-     }
-   </script>
+    <div class="image-container">
+        <img id="back" class="image1" src="Screenshot 2024-06-15 125038.png" width="500px">
+        <img id="front" class="image2" src="dataScience.36dd03b9.jpg" width="500px">
+    </div>
+    <button onclick="showBackImage()">Show Back Image</button>
+    <button onclick="showFrontImage()">Show Front Image</button>
+
+    <script>
+        function showBackImage() {
+            document.getElementById("back").style.display="block"
+            document.getElementById("back").style.zIndex = "3"; // Bring back image to the front
+            document.getElementById("front").style.zIndex = "2"; // Send front image back
+        }
+
+        function showFrontImage() {
+             // Bring back image to the front
+            document.getElementById("front").style.display="block"
+            document.getElementById("front").style.zIndex = "3"; // Bring front image to the front
+            document.getElementById("back").style.zIndex = "2"; // Send back image back
+        }
+    </script>
 </body>
 </html>
