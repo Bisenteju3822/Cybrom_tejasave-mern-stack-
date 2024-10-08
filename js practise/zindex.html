@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <div id="none">
+       <img id="back" src="Screenshot 2024-06-15 125038.png" onclick="change()" width="500px">
+   </div> 
+   <button onclick="back()">Click</button>
+   <script>
+     function back() {
+         document.getElementById("back").src = "dataScience.36dd03b9.jpg";
+         document.getElementById("back").style.display = "block";
+         alert("correct");
+     }
+     
+     function change() {
+         document.getElementById("back").src = "Screenshot 2024-06-15 125038.png";
+         document.getElementById("back").style.zIndex = "-1";
+     }
+   </script>
+</body>
+</html>
