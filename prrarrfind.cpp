@@ -4,33 +4,35 @@ using namespace std;
 int main()
 {
   int rows = 3;
-  int cols = 2;
-  int arr[3][2] = {
-      {1, 2},
-      {4, 5},
-      {9, 4}};
-  int arr1[3][2] = {
-      {1, 2},
-      {4, 5},
-      {9, 4}};
-  int find;
-  cin >> find;
-  int store[3][2]; // Array to hold the multiplied values
+  int cols = 3;
+  int arr[3][3] = {
+      {1, 2, 2},
+      {7, 1, 6},
+      {7, 2, 1}};
 
-  // Multiplying the arrays element-wise
-  for (int i = 0; i < rows; i++)
-  {
-    for (int j = 0; j < cols; j++)
-    {
-      if (find == arr[i][j])
+  bool sameDiagonal = false;
+
+  for (int i = 0; i < rows - 1; i++)
+  { // Avoid out-of-bounds access
+    for (int j = 0; j < cols - 1; j++)
+    { // Avoid out-of-bounds access
+      if (arr[i][j] == arr[i + 1][j + 1])
       {
-        cout << "It is in array";
+        cout << "Elements at (" << i << "," << j << ") and (" << (i + 1) << "," << (j + 1) << ") are the same: " << arr[i][j] << endl;
+        sameDiagonal = true;
         break;
       }
     }
+    if (sameDiagonal)
+    {
+      break;
+    }
   }
 
-  // Printing the resultant array
+  if (!sameDiagonal)
+  {
+    cout << "No same diagonal elements found." << endl;
+  }
 
   return 0;
 }
