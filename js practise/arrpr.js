@@ -21,9 +21,14 @@ for (let i in arr) {
 for (let value of arr) {
   console.log(arr[value])
 }*/
-const string1 = "hello teju"
-const string2 = string(string4)
-consolelog(string2)
-const string = function (str) {
-  return str.split('').reverse().join('')
-}
+const string1 = "hello teju";
+
+// Output will be "ujet olleh"
+
+const reverseString = function (str) {
+  return str.split('').reverse().join('');
+};
+const string2 = reverseString(string1);
+
+document.getElementById("str33").innerHTML = reverseString(string1);
+console.log(string2); 
