@@ -25,10 +25,29 @@ const string1 = "hello teju";
 
 // Output will be "ujet olleh"
 
-const reverseString = function (str) {
+/*const reverseString = function (str) {
   return str.split('').reverse().join('');
 };
 const string2 = reverseString(string1);
 
 document.getElementById("str33").innerHTML = reverseString(string1);
-console.log(string2); 
+console.log(string2); */
+/**
+ //
+ */
+var minimumSteps = function (s) {
+  let count = 0;
+  let minswaps = 0;
+
+  for (let ch of s) {
+    if (ch === '0') {
+      count++;
+    } else {
+      minswaps += count;
+    }
+  }
+  return minswaps;
+};
+
+const s2 = "100";
+console.log(minimumSteps(s2));
