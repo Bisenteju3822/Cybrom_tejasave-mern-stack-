@@ -35,7 +35,7 @@ console.log(string2); */
 /**
  //
  */
-var minimumSteps = function (s) {
+/*var minimumSteps = function (s) {
   let count = 0;
   let minswaps = 0;
 
@@ -50,4 +50,12 @@ var minimumSteps = function (s) {
 };
 
 const s2 = "100";
-console.log(minimumSteps(s2));
+console.log(minimumSteps(s2));*/
+const str = "hello"
+str[0] = "h"
+console.log(str)
+const str1 = str.replace("e", "l")
+console.log(str)
+const arr = [1, 2, 3, 4, 5]
+arr[0] = 6
+console.log(arr)
