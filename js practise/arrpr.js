@@ -2,6 +2,7 @@
 arr.splice(2, 2, "teju", "pallu")
 console.log*/
 let arr = [2, 3, 4, 5, "hello"]
-for (let value in arr) {
-  console.log(value)
-}
+arr.splice(3, 1, "pallu")
+console.log(arr)
+arr.unshift(7)
+console.log(arr)
