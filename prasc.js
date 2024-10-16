@@ -1,0 +1,10 @@
+console.log(arr.toString())
+console.log(arr.splice(2, 1))
+console.log(arr)
+console.log(arr.reduce(function (a, b) { return a - b }))
+
+console.log(arr.filter(element => element > 2))
+console.log(arr.sort(function (a, b) { return a - b }))
+console.log(arr.find(element => element < 3))
+console.log(arr.slice(1, 3))
+console.log(arr.forEach())
