@@ -1,0 +1,17 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+function App(){
+  const fooditems=["dal","rice","veg","paneer","salad"]
+  return (
+    <>
+    <h1>Healty Food</h1>
+    <ul className="list-group">
+      {fooditems.map((item)=>(
+      <li key={item} className='list-group-item'>{item}</li>
+    
+       ))}
+       </ul>
+   
+   </>
+      )
+ 
