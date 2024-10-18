@@ -1,0 +1,4 @@
+const rando = "wood land"
+console.log(rando.length)
+const ran = Math.random()
+console.log(rando.length / ran)
