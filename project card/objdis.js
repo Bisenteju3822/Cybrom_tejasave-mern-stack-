@@ -6,6 +6,6 @@ const dis = {
     return "happy"
   }
 }
-dis.age
+
 const { name, age, height, sum } = dis
 console.log(name, age, height, sum)
