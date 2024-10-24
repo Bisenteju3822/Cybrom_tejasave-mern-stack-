@@ -111,7 +111,8 @@ int main()
     }
     for (int c = i; c >= 1; c--)
     {
-      cout << "* ";
+      cout << "0 "endl;
+      cout
     }
     cout << endl;
   }
