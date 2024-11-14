@@ -1,2 +1,7 @@
-
+let name = {
+  first: "new",
+  second: 22,
+  third: 44
+}
+console.log(name)
 
