@@ -1,15 +1,40 @@
 {
-  "student":[
-
+  "student": [
     {
-      "name":"teju",
-      "age":"22",
-      "address":"bhopal"
-    },{
-      "name":"teju",
-      "age":"22",
-      "address":"bhopal"
-
+      "name": "teju",
+      "age": "22",
+      "address": "bhopal",
+      "id": "9abc"
+    },
+    {
+      "name": "teju",
+      "age": "22",
+      "address": "bhopal",
+      "id": "b0ef"
+    },
+    {
+      "id": "2afd",
+      "name": "TEJASAVE BISEN",
+      "age": "22",
+      "address": "bhopal"
+    },
+    {
+      "id": "94c6",
+      "name": "TEJASAVE BISEN",
+      "age": "22",
+      "address": "bhopal"
+    },
+    {
+      "id": "8e08",
+      "name": "pallu",
+      "age": "24",
+      "address": "nagpur"
+    },
+    {
+      "id": "ac4c",
+      "name": "pallu",
+      "age": "24",
+      "address": "nagpur"
     }
   ]
 }
