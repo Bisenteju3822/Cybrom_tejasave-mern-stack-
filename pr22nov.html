@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table border="1"> <!-- Added border for better visibility -->
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="showdata">
+    </tbody>
+  </table>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('http://localhost:3000/student');
+        const data = await response.json();
+        displayData(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    function displayData(data) {
+      const tbody = document.getElementById('showdata');
+      tbody.innerHTML = ''; // Clear any existing data
+
+      data.forEach(student => {
+        const row = document.createElement('tr');
+
+        const nameCell = document.createElement('td');
+        nameCell.textContent = student.name;
+        row.appendChild(nameCell);
+
+        const ageCell = document.createElement('td');
+        ageCell.textContent = student.age;
+        row.appendChild(ageCell);
+
+        const addressCell = document.createElement('td');
+        addressCell.textContent = student.address;
+        row.appendChild(addressCell);
+
+        const actionCell = document.createElement('td');
+        const button = document.createElement('button');
+        button.textContent = 'Edit';
+        button.onclick = () => myedit(student.id);
+        actionCell.appendChild(button);
+        row.appendChild(actionCell);
+
+        tbody.appendChild(row);
+      });
+    }
+
+    async function myedit(id) {
+      try {
+        const response = await fetch(`http://localhost:3000/student/${id}`);
+        const student = await response.json();
+        let senddata = `
+<input type="text" id="id1" value="${student.id}" readonly><br>
+<input type="text" id="name1" value="${student.name}"><br>
+<input type="text" id="age1" value="${student.age}"><br>
+<input type="text" id="address1" value="${student.address}"><br>
+<input type="button" value="Update" onclick="finalupdate(${student.id})">`;
+
+        document.querySelector('#edittable').innerHTML = senddata;
+      } catch (error) {
+        console.error('Error fetching student data:', error);
+      }
+    }
+
+    async function finalupdate(id) {
+      const fdata = {
+        name: document.querySelector('#name1').value,
+        age: document.querySelector('#age1').value,
+        address: document.querySelector('#address1').value
+      };
+
+      try {
+        const response = await fetch(`http://localhost:3000/student/${id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(fdata)
+        });
+
+        if (response.ok) {
+          alert("Update successful!");
+          fetchData(); // Refresh the data after update
+        } else {
+          alert("Update failed!");
+        }
+      } catch (error) {
+        console.error('Error updating student data:', error);
+      }
+    }
+
+    // Fetch data when the page loads
+    document.addEventListener('DOMContentLoaded', fetchData);
+  </script>
+</body>
+
+</html>
