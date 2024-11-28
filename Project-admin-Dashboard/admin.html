@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin dashboard</title>
-
+  <title>Admin Dashboard</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <link rel="stylesheet" href="admin.css">
 </head>
 
@@ -19,7 +17,6 @@
           <img src="progress_3080736.png">
           <h2 class="text-muted">AD<span class="danger">MIN</span></h2>
         </div>
-
         <div class="close" id="close-btn">
           <i class="material-icons">close</i>
         </div>
@@ -31,12 +28,11 @@
         </a>
         <a href="#">
           <i class="material-icons">person</i>
-
           <h3>ORDERS</h3>
         </a>
         <a href="#">
           <span class="material-icons">receipt_long</span>
-          <h3>ANALYSTICS</h3>
+          <h3>ANALYTICS</h3>
         </a>
         <a href="#">
           <span class="material-icons">insights</span>
@@ -64,54 +60,55 @@
         </a>
       </div>
     </aside>
-    <!----------End of aside-->
+    <!-- End of aside -->
     <main>
       <h1>Dashboard</h1>
-      <div class="sales">
+      <div class="date">
         <input type="date">
       </div>
       <div class="insights">
-        <div class="sales">
+        <div class="expenses">
           <span class="material-icons">analytics</span>
           <div class="middle">
             <div class="left">
               <h3>Total expenses</h3>
-              <h1>$24,555</h1>
+              <h1>$277,555</h1>
             </div>
             <div class="progress">
               <svg>
-                <circle cx="38" cy="38" r="'36"></circle>
+                <circle class="expenses" cx="38" cy="38" r="36"></circle>
               </svg>
               <div class="number">
                 <p>81%</p>
               </div>
             </div>
           </div>
-          <small class="text-muted">Last 24 hours</small>
+          <small>Last 24 hours</small>
         </div>
-        <!-------------End of sides-------------------->
-        <div class="expenes">
-          <span class="material-icons">stacked_list_chart</span>
+        <!-- End of expenses -->
+
+        <div class="sales">
+          <span class="material-icons">analytics</span>
           <div class="middle">
             <div class="left">
-              <h3>Total income</h3>
-              <h1>$24,555</h1>
+              <h3>Total sales</h3>
+              <h1>$265,555</h1>
             </div>
             <div class="progress">
               <svg>
-                <circle cx="38" cy="38" r="'36"></circle>
+                <circle class="sales" cx="38" cy="38" r="36"></circle>
               </svg>
               <div class="number">
-                <p>44%</p>
+                <p>81%</p>
               </div>
             </div>
           </div>
-          <small class="text-muted">Last 24 hours</small>
+          <small>Last 24 hours</small>
         </div>
-        <!-------------End of expenses-------------------->
+        <!-- End of sales -->
 
         <div class="sales">
-          <span class="material-icons">sales</span>
+          <span class="material-icons">analytics</span>
           <div class="middle">
             <div class="left">
               <h3>Total sales</h3>
@@ -119,18 +116,160 @@
             </div>
             <div class="progress">
               <svg>
-                <circle cx="38" cy="38" r="'36"></circle>
+                <circle class="sales" cx="38" cy="38" r="36"></circle>
               </svg>
               <div class="number">
                 <p>81%</p>
               </div>
             </div>
           </div>
-          <small class="text-muted">Last 24 hours</small>
+          <small>Last 24 hours</small>
         </div>
       </div>
+      <!------------ENd of insights---------------------------------------->
+      <div class="recent-order">
+        <h2>
+          Recent ORDERS
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Number</th>
+              <th>Payment</th>
+              <th>status</th>
+              <th>About</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Foldable Mini drone</td>
+              <td>85631</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Foldable Mini drone</td>
+              <td>85631</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Foldable Mini drone</td>
+              <td>85631</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Foldable Mini drone</td>
+              <td>85631</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Foldable Mini drone</td>
+              <td>85631</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+      </div>
     </main>
-  </div>
+    <!-------------------------Eend fo main-->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span id="light-mode-btn" class="material-icons">light_mode</span>
+          <span id="dark-mode-btn" class="material-icons">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Hey,<b>Tejasave</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="tejuphoto.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!----------End of top-->
+      <div class="recent_updates">
+        <h2>Recent Updates</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="th (1).jpeg">
+            </div>
+            <div class="message">
+              <p><b>Tyson</b> received an order of boat headphones</p>
+              <small class="text-muted">7 minutes ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="th (2).jpeg" alt="Profile Photo">
+            </div>
+            <div class="message">
+              <p><b>Tyson</b> received an order of boat headphones</p>
+              <small class="text-muted">7 minutes ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="th (3).jpeg" alt="Profile Photo">
+            </div>
+            <div class="message">
+              <p><b>Tyson</b> received an order of boat headphones</p>
+              <small class="text-muted">7 minutes ago</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="th (4).jpeg" alt="Profile Photo">
+            </div>
+            <div class="message">
+              <p><b>Tyson</b> received an order of boat headphones</p>
+              <small class="text-muted">7 minutes ago</small>
+            </div>
+          </div>
+        </div>
+        <!--------------------End of recent updates-->
+        <h2>Sales Analytics</h2>
+        <div class="box-it">
+          <span class="material-icons">analytics</span>
+          <div>
+            <div class="left">
+              <h3>Total Sales</h3>
+              <h1>$24,555</h1>
+            </div>
+            <div>
+              <svg>
+                <circle class="sales" cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div>
+                <p>81%</p>
+              </div>
+            </div>
+          </div>
+          <small>Last 24 hours</small>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+</body>
 
 </body>
 
