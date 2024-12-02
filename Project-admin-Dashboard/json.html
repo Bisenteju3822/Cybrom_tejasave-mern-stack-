@@ -29,7 +29,7 @@
           <td>$10.99</td>
           <td>High-quality widget</td>
           <td>
-            <button onclick="editProduct(1)">Edit</button>
+            <button onclick="editProduct(1)">udpdate</button>
             <button onclick="deleteProduct(1)">Delete</button>
           </td>
         </tr>
@@ -38,11 +38,11 @@
           <td>$15.99</td>
           <td>Advanced gadget</td>
           <td>
-            <button onclick="editProduct(2)">Edit</button>
+            <button onclick="editProduct(2)">udpdate</button>
             <button onclick="deleteProduct(2)">Delete</button>
           </td>
         </tr>
-        <!-- More rows as needed -->
+
       </tbody>
     </table>
   </section>
@@ -62,7 +62,7 @@
 
     function displayData(data) {
       const tbody = document.getElementById('showdata');
-      tbody.innerHTML = ''; // Clear any existing data
+      tbody.innerHTML = '';
 
       data.forEach(product => {
         const row = document.createElement('tr');
