@@ -1,18 +1,20 @@
-import "./App.css"
-function App(){
-   let st={
-    backgroundColor:"yellow",
-    color:"black"
+import "./App.css";
+import Nav from './Nav';
 
-   }
-  return (
-    <>
+function App() {
+    let st = {
+        backgroundColor: "yellow",
+        color: "black"
+    };
 
-    <h1 style={{backgroundColor:"red",color:"white"}}>we ave to prepare for this </h1>
-     <h3 style={st}>We are to decide this</h3>
-     <h4 className="practise">new boy</h4>
-    </>
-  )
+    return (
+        <>
+            <Nav />
+            <h1 style={{backgroundColor: "red", color: "white"}}>We have to prepare for this</h1>
+            <h3 style={st}>We are to decide this</h3>
+            <h4 className="practise">new boy</h4>
+        </>
+    );
 }
 
-export default App
+export default App;
