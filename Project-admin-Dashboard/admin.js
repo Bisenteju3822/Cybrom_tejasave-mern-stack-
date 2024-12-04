@@ -16,13 +16,4 @@ document.getElementById('dark-mode-btn').addEventListener('click', function () {
   localStorage.setItem('mode', 'dark');
 });
 
-// Redirect to login page
 
-
-// Check the saved mode on page load and apply it
-window.addEventListener('DOMContentLoaded', (event) => {
-  const savedMode = localStorage.getItem('mode');
-  if (savedMode) {
-    document.body.classList.add(savedMode === 'dark' ? 'dark-mode' : 'light-mode');
-  }
-});
