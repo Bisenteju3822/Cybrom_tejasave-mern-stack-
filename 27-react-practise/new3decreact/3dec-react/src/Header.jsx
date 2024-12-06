@@ -1,23 +1,9 @@
-const Head=()=>{
-  return(
-    <>
-   <section className="top">
-    <ul  className="hero">
-    <li>Home</li>
-    <li>About</li>
-    <li>Service</li>
-    <li>login</li>
-    </ul>
-    <div>
-      <h1>
-        HERO SECTION
-      </h1>
-    </div>
-   </section>
+<prsecondhigh6dec className="cpp"></prsecondhigh6dec>
+          <h1>Hello boys</h1>
+        </div>
+      </div>
+    </>
+  );
+};
 
-</>
-  )
-
-  
-}
-export default Head
+export default Head;

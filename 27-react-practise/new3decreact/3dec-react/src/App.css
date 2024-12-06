@@ -1,11 +1,49 @@
 body {
+  margin: 0;
   background-color: blanchedalmond;
   color: black;
-
-
+  font-family: Arial, sans-serif;
 }
 
-.top {
-  top: 0%;
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.li {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.li:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
 }
