@@ -11,4 +11,3 @@ int main()
   cout << "value::" << *p << endl;
 
   return 0;
-}
