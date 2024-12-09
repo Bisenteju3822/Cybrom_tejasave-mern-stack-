@@ -22,11 +22,14 @@ nav {
 nav ul {
   display: inline-block;
   list-style-type: none;
+  font-weight: bolder;
+
 }
 
 nav ul li {
   display: inline-block;
   margin: 20px;
+
 }
 
 a {

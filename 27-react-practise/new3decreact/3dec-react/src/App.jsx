@@ -1,13 +1,16 @@
-import "./App.css";
-function App() {
-  
+import Child from './Child';
+import Child2 from './Child2';
 
+
+const App = () => {
+    let b=prompt("we are the best")
+      
     return (
         <>
-            <Head></Head>
+        <Child2 boy={b}></Child2>
+            <Child name={b} />
         </>
     );
-}
-import Head from "./Header";
+};
 
 export default App;
