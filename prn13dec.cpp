@@ -28,3 +28,4 @@ int main()
   cout << "Sum of first " << n << " Fibonacci numbers is: " << sumFib(n) << endl;
   return 0;
 }
+pr
