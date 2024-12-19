@@ -1,22 +1,14 @@
-import Header from './Header';
-import Hero from './Hero';
-import About from './About';
-import Services from './Services';
-import Contact from './Contact';
-import './App.css';
+import { useState } from 'react';
 
 const App = () => {
+  const [h, setH] = useState(false);
+
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Contact />
-      </main>
-    </div>
+    <>
+      <button onClick={() => setH(true)}>Show</button>
+      {h && <h1>This is heading</h1>}
+    </>
   );
-};
+}
 
 export default App;
