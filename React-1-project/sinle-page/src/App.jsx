@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import Counter from "./Counter";
+import Light from "./light";
 
 const App = () => {
-  const [h, setH] = useState(false);
-
   return (
     <>
-      <button onClick={() => setH(true)}>Show</button>
-      {h && <h1>This is heading</h1>}
+      <Counter />
+      <Light/>
     </>
   );
 }
