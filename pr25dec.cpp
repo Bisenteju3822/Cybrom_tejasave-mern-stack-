@@ -12,4 +12,4 @@ int main()
   };
   teju ob;
   ob.display();
-}
+} // anonymous class

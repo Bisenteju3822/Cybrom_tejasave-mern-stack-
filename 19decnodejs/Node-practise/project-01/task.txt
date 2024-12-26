@@ -1,0 +1,9 @@
+REST API -JSON
+GETapi/users-LIST ALL users
+GET api/users/1-Get the user with id 1
+GET api/users/2-Get the user with id 2
+POST api/userS-Create new user
+PATCH api/users/Edit the user with Id 1
+Delete api/user/1-Delete the user with id 1
+[DYNAMIC PATH PARAMETERS
+GET/API/userS/:ID]
