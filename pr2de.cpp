@@ -35,8 +35,8 @@ public:
 int main()
 {
   cust o;
-  o.data(5); // Example input
-  o.into(5); // Example input
+  o.data(); // Example input
+  o.into(); // Example input
   o.show();
   return 0;
 }
