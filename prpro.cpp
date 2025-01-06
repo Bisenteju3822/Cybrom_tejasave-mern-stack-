@@ -20,7 +20,7 @@ public:
 int main()
 {
   surname ob;
-  ob.display();
+  ob.go();
 
   return 0;
 }
