@@ -1,19 +1,12 @@
-const express = require('express'); // Ensure 'express' is in quotes
+const express = require("express");
 const app = express();
+const port = 8000;
 
-app.get("/", (req, res) => {
-  res.send("<h1>Server running on port 8000 successfully</h1>");
-});
+const routes = require("./Routes/EmpRoute");
+app.set("view engine", "ejs");
 
-app.get("/Home", (req, res) => {
-  res.send("<h1>Server Home running on port 8000 successfully</h1>");
-});
+app.use("/student", routes);
 
-
-app.get("/About", (req, res) => {
-  res.send("<h1>Server About successfully</h1>");
-});
-
-app.listen(8000, () => {
-  console.log("Server is running on port 8000");
+app.listen(port, () => {
+  console.log("Server running successfully on port 8000");
 });
